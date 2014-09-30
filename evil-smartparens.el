@@ -40,7 +40,7 @@
    (intern (format "evil-%s" name)))
 
 (defmacro evil-sp-make-evil-smartparens-movement (name)
-  "Create Evil movement command from NAME_function."
+  "Create Evil movement command from NAME function."
   `(let ((evil-name (evil-sp-evilize-name ,name))
          (doc (documentation ,name)))
      (evil-define-motion evil-name (count)

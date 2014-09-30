@@ -30,6 +30,11 @@
 
 ;;; Code:
 
+(define-minor-mode evil-smartparens-mode
+  "Minor mode for combining Evil and SmartParens."
+  :keymap '()
+  :lighter "E-SP")
+
 (defun evil-sp-evilize-name (name)
   "Return an interned symbol NAME prefixed with 'evil-'."
    (intern (format "evil-%s" name)))
